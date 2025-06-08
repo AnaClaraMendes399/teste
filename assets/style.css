@@ -1,0 +1,302 @@
+.meow-script-regular {
+    font-family: "Meow Script", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  *{
+      margin:0;
+      padding: 0;
+      box-sizing: border-box;
+      text-decoration: none;
+      outline: none;
+      list-style: none;
+  }
+  html{
+      scroll-behavior: smooth;
+  }
+  
+  body{
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      background-color: rgb(0, 0, 0);
+      font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  header{
+      width: 100%;
+      height: 100px;
+      background-color: #688f4e;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding: 10px 100px;
+      color: #e4e4e4;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 1000;
+  }
+  
+  .logo{
+      height: 80px;
+      width: 300px;
+      display: flex;
+      align-items: center;
+  }
+  
+  .logo img {
+  width: 60px;       
+  height: 60px;
+  border-radius: 50%; 
+  object-fit: cover; 
+  margin-right: 10px}
+
+  
+  .logo h1{
+  font-family: "Meow Script", cursive;
+    font-weight: 400;
+    font-style: normal;
+  font-size: 30px;
+  color: #e4e4e4;
+  }
+  
+  .logo h2{
+      font-family: "Meow Script", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+      color: #2b463c;
+  }
+  /*---------------MENU-----------------*/
+  .menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 65px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.menu a:hover {
+  color: #e4e6e4;
+}
+
+/* --------------HOME----------------- */
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; 
+  text-align: center;
+  background-image: url('../img/2149141339.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-content {
+    
+   background-color: rgba(0, 0, 0, 0.6); 
+  padding: 50px 40px;
+  border-radius: 12px;
+  max-width: 1200px;
+  min-height: 250px;
+  margin: 0 auto;
+  color: white;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.hero h1 {
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.hero p {
+  font-size: 1.2rem;
+  max-width: 700px;
+  margin: 0 auto 2rem;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.4);
+}
+  
+  /* ----------- SEÇÕES DO CARDÁPIO ----------- */
+  .linha{
+      width: 100%;
+      min-height: 100vh;
+      background-color: #f2efeb;
+      border-bottom: 1px solid #000000;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 120px 20px 50px;
+  }
+  
+  .linha h1 {
+      font-family: "Meow Script", cursive;
+      font-size: 42px;
+      color: #2b463c;
+      margin-bottom: 40px;
+      text-align: center;
+  }
+  
+  .container{
+      width: 100%;
+      max-width: 1200px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+  }
+  
+  .card {
+      width: 280px;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      transition: all 0.3s ease;
+  }
+  
+  .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+  }
+  
+  .card img{
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-bottom: 3px solid #688f4e;
+  }
+  
+  .card h3 {
+      padding: 15px 15px 5px;
+      font-size: 20px;
+      color: #2b463c;
+      font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .card p {
+      padding: 0 15px;
+      font-size: 14px;
+      color: #555;
+      min-height: 60px;
+  }
+  
+  .preco {
+      display: block;
+      padding: 15px;
+      font-weight: bold;
+      color: #ff0000;
+      font-size: 18px;
+      text-align: right;
+      background-color: #f0f8f0;
+  }
+  
+  /*-----------rodapé---------*/
+ 
+footer {
+    width: 100%;
+    background-color: #2b463c;
+    padding: 50px 20px;
+    color: #e4e4e4;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 250px;
+    padding: 0 15px;
+    margin-bottom: 20px;
+}
+
+.footer-section.middle {
+    border-left: 1px solid #688f4e;
+    border-right: 1px solid #688f4e;
+    padding: 0 30px;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    border-radius: 10px;
+}
+
+.footer-logo img {
+    height: 60px;
+    width: 60px;
+    margin-right: 15px;
+    border-radius: 25px;
+}
+.social-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.social-link img {
+  width: 24px; 
+  height: 24px;
+}
+.footer-logo-text h2 {
+    font-family: "Meow Script", cursive;
+    font-size: 30px;
+    color: #e4e4e4;
+    line-height: 1;
+    margin: 0;
+}
+
+.footer-logo-text h3 {
+    font-family: "Meow Script", cursive;
+    font-size: 26px;
+    color: #688f4e;
+    line-height: 1;
+    margin: 0;
+}
+
+.footer-title {
+    font-size: 25px;
+    color: #e4e4e4;
+    margin-bottom: 20px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #688f4e;
+}
+
+
+.copyright {
+    text-align: center;
+    margin-top: 50px;
+    padding-top: 20px;
+    border-top: 1px solid #688f4e;
+    font-size: 14px;
+    width: 100%;
+}
+
+
+
+  .col_rodape{
+      width: 400px;
+      height: 100%;
+      border: 1px solid #e4e4e4;
+  }
+  footer img{
+    width: 30px;
+  }
